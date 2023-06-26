@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_normal"
+    android:background="@color/color_primary">
+
+    <ImageView
+        android:id="@+id/imageview_agent_image"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageview_agent_type_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="@+id/texview_agent_type"
+        app:layout_constraintEnd_toStartOf="@+id/texview_agent_type"
+        app:layout_constraintTop_toTopOf="@+id/texview_agent_type" />
+
+    <TextView
+        android:id="@+id/texview_agent_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_agent_image"
+        tools:text="Iniciador" />
+
+    <TextView
+        android:id="@+id/tv_agent_detail_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_size_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texview_agent_type"
+        tools:text="Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again." />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_agents_abilities"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_agent_detail_desc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

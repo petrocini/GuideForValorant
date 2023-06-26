@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/margin_small"
+    android:background="@drawable/guide_item_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/padding_larger">
+
+    <TextView
+        android:id="@+id/textview_agent_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_larger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Fade" />
+
+    <ImageView
+        android:id="@+id/imageview_agent_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_agent_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

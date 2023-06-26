@@ -43,4 +43,8 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="title_agents">Agents</string>
+    <string name="return_button">Voltar</string>
+    <string name="title_agent_type">Type:</string>
+    <string name="title_agent_description">Description:</string>
 </resources>
